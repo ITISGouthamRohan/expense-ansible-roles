@@ -1,0 +1,10 @@
+https://github.com/ITISGouthamRohan/expense-ansible-roles.git
+
+[db]
+db.itsgouthamrohan.site
+
+[backend]
+backend.itsgouthamrohan.site
+
+[frontend]
+itsgouthamrohan.site  
