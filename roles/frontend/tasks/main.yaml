@@ -32,7 +32,10 @@
 #     remote_src: yes
 
 
-
+- name: run app pre-requisite
+  ansible.builtin.import_role: 
+    name: common
+    tasks_from: app-pre-req
 
  # if there is change in configuration only, then you need to restart nginx
 - name: copy backend conf
@@ -42,6 +45,7 @@
 
   notify:
     - restart nginx
+    
 # - name: restart nginx
 #   ansible.builtin.service:
 #     name: nginx
